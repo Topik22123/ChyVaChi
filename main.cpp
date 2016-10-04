@@ -5,19 +5,19 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    int choose;
-    int Choice;
+    char Rock,Scissors,Paper;
+    char Yes;
     srand (time(NULL));
-    cout << "Hi Dude!Do you want to the game?\n1.Yes" << endl;
-    cin >> Choice;
-    if (Choice=1)
+    cout << "Hi Dude!Do you want to the game?\nPrint:Yes" << endl;
+    cin >> Yes;
+    if (Yes)
     {
         cout << "Ok lets start.\n";
         cout << "Choose your choice:\n1.Rock\n2.Scissors\n3.Paper\n";
-        cin >> choose;
+        cin >> Rock >> Scissors >>Paper;
 
         int Random = rand() % 3 + 1;
-        if (choose == 1)
+        if (Rock)
         {
             if (Random == 3)
             {
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 
 
         }
-        else if (choose == 2)
+        else if (Scissors)
              {
                 if (Random == 1 )
                 {
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
                             cout <<"You win!" << endl;
                             }
              }
-              else if (choose== 3)
+              else if (Paper)
                    {
                     if (Random == 1 )
                         {
@@ -65,7 +65,6 @@ int main(int argc, char *argv[])
                                  }
                    }
         }
-
                 cout << "\nGoodbye!" << endl;
 
 
