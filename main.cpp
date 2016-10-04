@@ -1,6 +1,5 @@
 #include <iostream>
 #include <ctime>
-#include <cstdlib>
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -64,9 +63,20 @@ int main(int argc, char *argv[])
                                     cout <<"Draw!" << endl;
                                  }
                    }
-        }
+        if (Random == 1)
+         {
+            cout <<"Computer choose Rock"<<endl;
+         }
+            else if(Random == 2)
+             {
+               cout << "Computer choose Scissors"<<endl;
+             }
+              else
+                 {
+                   cout<<"Computer choose Paper"<<endl;
+                 }
+    }
                 cout << "\nGoodbye!" << endl;
-
 
     return 0;
 }
